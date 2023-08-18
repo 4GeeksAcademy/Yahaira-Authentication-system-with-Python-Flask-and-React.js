@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+
+	const handleLogout = () => {
+		if(sessionStorage.getItem("token")){
+			sessionStorage.removeItem("token")
+		}
+	}
+
 	return (
 		<nav className="navbar navbar-light bg-light">
 			<div className="container">
@@ -11,6 +18,11 @@ export const Navbar = () => {
 				<div className="ml-auto">
 					<Link to="/demo">
 						<button className="btn btn-primary">Check the Context in action</button>
+					</Link>
+				</div>
+				<div>
+					<Link to="/login">
+						<button className="btn btn-primary" onClick={handleLogout}>Log Out</button>
 					</Link>
 				</div>
 			</div>
