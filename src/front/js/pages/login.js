@@ -44,7 +44,7 @@ const handleLogin = (ev) => {
             <form className="mt-3" method="POST" onSubmit={handleLogin}>
                     <div className="mb-3">
                         <label className="form-label" htmlFor="EmailForm">E-mail Adress</label>
-                        <input type="email" className="form-control" id="EmailForm" placeholder="JohnDoe@example.com" onInput={handleEmail} required></input>
+                        <input type="email" className="form-control" id="EmailForm" placeholder="yahaira@example.com" onInput={handleEmail} required></input>
                     </div>
                     <div className="mb-3">
                         <label className="form-label" htmlFor="PasswordForm">Password</label>
